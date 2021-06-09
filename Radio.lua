@@ -59,6 +59,12 @@ local radio_volume = gui.Slider( box, 'r.volume', 'Volume', 10, 0, 100 );
 callbacks.Register( "Draw", function()
     local station = radio_station:GetValue();
 
+    if (gui.Reference("MENU"):IsActive()) then
+        window:SetActive(true);
+    else
+        window:SetActive(false);
+    end;    
+        
     if (radio_play:GetValue()) == false then 
         BASS_ChannelStop(stream);
         playing = false;
@@ -79,12 +85,6 @@ callbacks.Register( "Draw", function()
 
     if (playing and stream ~= 0) then
         BASS_ChannelSetAttribute(stream, BASS_ATTRIB_VOL, radio_volume:GetValue()/100);
-    end;
-
-    if (gui.Reference("MENU"):IsActive()) then
-        window:SetActive(true);
-    else
-        window:SetActive(false);
     end;
 
 end );
