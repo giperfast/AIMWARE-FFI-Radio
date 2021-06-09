@@ -41,8 +41,6 @@ local BASS_ChannelSetAttribute = ffi.cast("int(__stdcall*)( unsigned long, unsig
 local BASS_ChannelPlay = ffi.cast("int( __stdcall*)(unsigned long, bool)", ffi.C.GetProcAddress(bass_dll, "BASS_ChannelPlay"));
 local BASS_ChannelStop = ffi.cast("int(__stdcall*)(unsigned long)", ffi.C.GetProcAddress(bass_dll, "BASS_ChannelStop"));
 
-local BASS_ChannelGetTags = ffi.cast("int(__stdcall*)(unsigned long, unsigned long)", ffi.C.GetProcAddress(bass_dll, "BASS_ChannelGetTags"));
-
 local BASS_UNICODE, BASS_ATTRIB_VOL, stream, playing, station_backup = 4, 2, 0, false, 0;
 BASS_Init(-1, 44100, BASS_UNICODE, nil, nil);
 
