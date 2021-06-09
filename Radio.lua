@@ -14,7 +14,7 @@ local stations = {
     { name = "Record dubstep", url = "http://air.radiorecord.ru:805/dub_320" },
     { name = "Record dancecore", url = "http://air.radiorecord.ru:805/dc_320" },
     { name = "Housetime", url = "http://mp3.stream.tb-group.fm/ht.mp3" },
-    { name = "Anison", url = "http://pool.anison.fm:9000/AniSonFM(320)?nocache=0.752104723294601" },
+    { name = "Anison", url = "http://pool.anison.fm:9000/AniSonFM(320)" },
     { name = "8 bit", url = "http://8bit.fm:8000/live" },
     { name = "Technobase", url = "http://mp3.stream.tb-group.fm/tt.mp3" },
     { name = "Teatime", url = "http://mp3.stream.tb-group.fm/tt.mp3" },
