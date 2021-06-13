@@ -75,14 +75,14 @@ local function TitleRenderHandler(Title)
         if fade >= 255 then
             state = 1;
         end;
-    elseif state == 1 then
-        if curtime == 0 then curtime = globals.CurTime() end;
-        if (globals.CurTime() - curtime > 10) then
+     elseif state == 1 then
+        if curtime == 0 then curtime = globals.TickCount() end;
+        if (globals.TickCount() - curtime > 1000) then
             fade = fade - 1;
             if fade <= 0 then
                 state = 0;
                 metadata_backup = metadata;
-                curtime = globals.CurTime();
+                curtime = globals.TickCount();
             end;
         end;
     end;
