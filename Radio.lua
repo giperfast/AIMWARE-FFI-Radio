@@ -20,7 +20,8 @@ local stations = {
     { name = "Clubtime",            url = "http://mp3.stream.tb-group.fm/clt.mp3" },
     { name = "Coretime",            url = "https://listener3.mp3.tb-group.fm/ct.mp3" },
     { name = "Trancebase",          url = "https://listener3.mp3.tb-group.fm/trb.mp3" },
-    { name = "Wargaming",           url = "http://wargaming.fm/1" }
+    { name = "Wargaming",           url = "http://wargaming.fm/1" },
+    { name = "Gachibass",           url = "http://gachibass.ru/play" }
 }
 
 ffi.cdef[[
