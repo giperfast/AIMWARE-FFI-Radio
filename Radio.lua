@@ -138,6 +138,8 @@ local function RadioHandler()
                         TitleRenderHandler(Title);
                     end;
                 end;
+            else
+                metadata_backup = "";
             end;
         end;
     end;
