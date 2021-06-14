@@ -109,6 +109,8 @@ local function RadioHandler()
 
     if (playing and station_backup ~= station) then
         BASS_ChannelStop(stream);
+        state = 0;
+        fade = 0;
         playing = false;
         stream = 0;
         station_backup = station;
